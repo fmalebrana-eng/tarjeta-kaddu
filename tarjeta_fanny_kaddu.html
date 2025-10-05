@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tarjeta | Fanny Malebran Ardiles — Kaddu Ingeniería y Logística</title>
+<style>
+  :root{
+    --accent:#F1B400; /* dorado/amarillo Kaddu */
+    --text:#111111;
+    --muted:#666666;
+    --border:#e6e6e6;
+    --bg:#f9f9f9;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.45;
+  }
+  .wrap{
+    min-height:100svh;
+    display:grid;
+    place-items:center;
+    padding:24px;
+  }
+  .card{
+    width:min(720px,100%);
+    background:white;
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  }
+  .top{
+    display:flex;
+    gap:22px;
+    align-items:center;
+    border-bottom:1px solid var(--border);
+    padding-bottom:18px;
+  }
+  .logo{
+    width:88px; height:88px; border-radius:12px;
+    display:grid; place-items:center;
+    background:#fff;
+    border:1px solid var(--border);
+    overflow:hidden;
+  }
+  .logo img{width:100%; height:100%; object-fit:cover}
+  .id h1{
+    font-size:clamp(20px,4vw,28px);
+    margin:0 0 6px 0;
+    letter-spacing:.2px;
+  }
+  .id .title{
+    color:var(--muted);
+    font-size:clamp(14px,2.2vw,16px);
+    margin-bottom:6px;
+  }
+  .id .company{
+    font-weight:600;
+    color:var(--text);
+  }
+  .grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:16px;
+    padding:18px 0 0 0;
+  }
+  .info{
+    border-right:1px solid var(--border);
+    padding-right:16px;
+  }
+  .row{
+    display:flex; align-items:center; gap:10px;
+    padding:8px 0;
+    font-size:16px;
+  }
+  .row .label{
+    min-width:86px; color:var(--muted);
+  }
+  .actions{
+    display:grid; gap:10px;
+  }
+  .btn{
+    display:flex; align-items:center; justify-content:center;
+    padding:12px 16px;
+    border-radius:10px;
+    border:1px solid var(--border);
+    text-decoration:none;
+    color:var(--text);
+    background:#fff;
+    transition: all .18s ease;
+    font-weight:600;
+  }
+  .btn.primary{ background:var(--accent); border-color:var(--accent)}
+  .btn:hover{ transform: translateY(-1px); box-shadow:0 6px 18px rgba(0,0,0,.08)}
+  .foot{
+    margin-top:18px;
+    display:flex; justify-content:space-between; align-items:center;
+    border-top:1px solid var(--border);
+    padding-top:14px;
+    color:var(--muted);
+    font-size:14px;
+  }
+  @media (max-width:680px){
+    .grid{ grid-template-columns:1fr; }
+    .info{ border-right:none; padding-right:0; border-bottom:1px solid var(--border); padding-bottom:14px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <article class="card" role="main">
+      <header class="top">
+        <div class="logo"><img alt="Logo Kaddu" src="data:image/jpeg;base64,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"/></div>
+        <div class="id">
+          <h1>Fanny Malebran Ardiles</h1>
+          <div class="title">Directora de proyectos y expansión</div>
+          <div class="company">Kaddu Ingeniería y Logística</div>
+        </div>
+      </header>
+
+      <section class="grid">
+        <div class="info">
+          <div class="row"><div class="label">Teléfono</div><div><a href="tel:+56932006715" style="color:inherit;text-decoration:none">+56932006715</a></div></div>
+          <div class="row"><div class="label">Email</div><div><a href="mailto:fanny.malebran@kaddu.cl" style="color:inherit;text-decoration:none">fanny.malebran@kaddu.cl</a></div></div>
+        </div>
+
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/56932006715" target="_blank" rel="noopener">Enviar WhatsApp</a>
+          <a class="btn" href="mailto:fanny.malebran@kaddu.cl">Enviar Email</a>
+          <a class="btn" href="tel:+56932006715">Llamar</a>
+          <a class="btn" href="Fanny_Malebran_Kaddu.vcf" download>Guardar Contacto (.vcf)</a>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <span>© Kaddu Ingeniería y Logística</span>
+        <span>Tarjeta digital · Diseño clásico</span>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
